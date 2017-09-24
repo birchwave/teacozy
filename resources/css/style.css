@@ -1,0 +1,208 @@
+
+/* codecademy, project Tea Cozy, Thomas Reichler, 24 Sep 2017 */
+
+/* settings for<body> */
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  align-items: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* deviation from default settings for html tags */
+
+a {
+  color: seashell;
+  margin-left: 18pt;
+}
+
+h2,
+h3,
+h4 {
+  /* adding default settings for header tags is not a good practise,
+     but in this case an easy way to implement the desired layout */
+  margin: 7pt; /* 0.35em would do about the same */
+  font-weight: bold; /* added for clarity, bold is default */
+}
+
+h5 {
+  /* adding default settings for header tags is not a good practise,
+     but in this case an easy way to implement the desired layout */
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* settings for main sections of the document */
+
+#header {
+  display: flex;
+  flex-direction: row; /* this is the default, added for better clarity */
+  justify-content: space-between;
+  align-items: center; /* shall center the items vertically - UNCLEAR */
+  height: 69px;
+  width: 1300px; /* value not specified, but looks like this in redline */
+  border-bottom: 1px solid seashell;
+}
+
+#mission {
+  display: flex;
+  flex-direction: column; /* row would also be a possible choice */
+  justify-content: center; /* keep box OUR MISSION vertically in center */
+  height: 700px;
+  width: 1200px;
+  background-image: url('../images/img-mission-background.jpg');
+}
+
+#featured {
+  display: flex;
+  flex-direction: row; /* row would also be a possible choice */
+  justify-content: center; /* keep box OUR MISSION vertically in center */
+  width: 1200px;
+  margin: 60px;
+}
+
+#locations {
+  display: flex;
+  flex-direction: column;
+}
+
+#locations-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* keep items vertically in center */
+  align-items: center;
+  height: 500px; /* redline shows 500px including padding, but shows without */
+  width: 1200px;
+  padding: 10px 0px 60px 0px;
+  background-image: url('../images/img-locations-background.jpg');
+}
+
+#locations-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* keep items vertically in center */
+  /* justify-content: center; /* keep items vertically in center, works w/o */
+}
+
+#locations-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  justify-content: flex-start; /* keep items vertically in center */
+  /* justify-content: center; /* keep items vertically in center, works w/o */
+}
+
+#footer {
+  display: flex;
+  flex-direction: row; /* this is the default, added for better clarity */
+  justify-content: left;
+  width: 1300px;
+  padding-left: 20px;
+}
+
+/* CLASSES USED IN WHOLE DOCUMENT */
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-row-wrap-center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /* justify-content: center; */
+}
+
+/* CLASSES FOR SECTIONS "HEADER", "MISSION", and "LOCATIONS" */
+
+.header-logo {
+  height: 50px;
+  width: 157px; /* not specified, calculated for fitting image */
+  background-image: url('../images/img-tea-cozy-logo.png');
+  background-size: contain;
+}
+
+.mission-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+
+.locations-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  height: 280px;
+  width: 300px;
+  margin: 15px 20px 30px 20px;
+}
+
+/* CLASSES FOR SECTION "FEATURED": layout and background images */"
+
+.featured-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  width: 300px;
+  margin: 10px 15px;
+  background-size: 300px auto;
+}
+
+.featured-article h4 {
+  text-align: center;
+}
+
+.img-berryblitz {
+  background-image: url('../images/img-berryblitz.jpg');
+}
+
+.img-spiced-rum {
+  background-image: url('../images/img-spiced-rum.jpg');
+}
+
+.img-donut {
+  background-image: url('../images/img-donut.jpg');
+}
+
+.img-myrtle-ave {
+  background-image: url('../images/img-myrtle-ave.jpg');
+}
+
+.img-bedford-bizarre {
+  background-image: url('../images/img-bedford-bizarre.jpg');
+}
+
+/* BORDERS FOR DEVELOPMENT AND DEBUGGING */
+
+/*
+.b1 {  border: 4px dotted Orange; }
+.b2 {  border: 2px dotted FireBrick; }
+.b3 {  border: 4px dotted SaddleBrown; }
+.b4 {  border: 4px dotted cadetblue; }
+*/
